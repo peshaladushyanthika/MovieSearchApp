@@ -84,7 +84,19 @@ To generate an API key, follow these steps:
        MOVIE_API_URL=https://www.omdbapi.com/
        MOVIE_API_KEY=your_omdb_api_key
 
-       
+## Usage
+
+* Register or log in.
+* Search for movies by entering a title.
+* Click on a movie to view details.
+* Add movies to favorites list.
+* Switch between light and dark modes as needed.
+
+## Deployment
+To deploy the application: 
+* Use github as a version control platform
+* Push code and commit changes
+
   
 
     
