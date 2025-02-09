@@ -30,36 +30,49 @@ Before running the application, ensure you have the following installed:
 ## Installation
 
 1. Clone the repository:
-   ```https://github.com/peshaladushyanthika/MovieSearchApp.git```
-3. Install dependencies:
-   ```composer install```
-4. Copy the environment file:
-   cp .env.example .env
-5. Configure Environment Variables:
- * Open the .env file and set up your API key and database credentials.
    
-    DB_CONNECTION=mysql
+   ```https://github.com/peshaladushyanthika/MovieSearchApp.git```
+2. Install dependencies:
+   
+   ```composer install```
+3. Copy the environment file:
+   
+   ```cp .env.example .env```
+   
+4. Configure Environment Variables:
+   
+ * Open the .env file and set up your database credentials.
+   
+    ```DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
     DB_DATABASE=database_name
     DB_USERNAME=database_username
-    DB_PASSWORD=database_password
-
-    MOVIE_API_URL=https://www.omdbapi.com/
-    MOVIE_API_KEY=your_omdb_api_key
+    DB_PASSWORD=database_password```
    
-7. Generate application key: php artisan key:generate
-8. Run database migrations: php artisan migrate
-9. Start the development server: php artisan serve
-10. Open "http://127.0.0.1:8000" in your browser.
+5. Generate application key:
+
+   ```php artisan key:generate```
+   
+6. Run database migrations:
+
+   ```php artisan migrate```
+   
+7. Start the development server:
+
+    ```php artisan serve```
+    
+8. Open http://127.0.0.1:8000 in your browser.
 
 ## API Configuration
 
 * OMDb open API: Get an API key from "https://www.omdbapi.com/" and set it in the .env file.
 
 ### How to Get Your OMDb API Key
+
     To generate an API key, follow these steps: 
-    1. Go to OMDb API Website "https://www.omdbapi.com/" and navigate to the "API Key" tab
+    
+    1. Go to OMDb API Website https://www.omdbapi.com/ and navigate to the "API Key" tab
     2. Sign Up for an API Key
      - Enter your name and email address
      - Choose a free or paid plan (Free allows 1,000 requests per day)
