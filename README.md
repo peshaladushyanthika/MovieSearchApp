@@ -36,8 +36,10 @@ Before running the application, ensure you have the following installed:
 Alternatively, if you prefer to fork the repository first and then clone your fork, follow these steps:
 - Fork the repository by clicking the Fork button in the top right corner of the GitHub page
 - Clone your forked repository using:
+
      ```git clone https://github.com/Your_github_username/MovieSearchApp.git```
-Replace Your_github_username with your actual GitHub username.
+  
+Replace Your_github_username with your actual GitHub username
 
 3. Install dependencies:
    
