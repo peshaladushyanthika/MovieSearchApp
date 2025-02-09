@@ -42,14 +42,14 @@ Before running the application, ensure you have the following installed:
 4. Configure Environment Variables:
    
  * Open the .env file and set up your database credentials.
-   
-    ```DB_CONNECTION=mysql
+   ```
+    DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
     DB_DATABASE=database_name
     DB_USERNAME=database_username
     DB_PASSWORD=database_password
-   
+    
 5. Generate application key:
 
    ```php artisan key:generate```
@@ -83,4 +83,5 @@ To generate an API key, follow these steps:
     - Replace your_api_key with the actual key from your email:
 
     ```MOVIE_API_URL=https://www.omdbapi.com/
-    MOVIE_API_KEY=your_omdb_api_key
+    ```MOVIE_API_KEY=your_omdb_api_key
+    
