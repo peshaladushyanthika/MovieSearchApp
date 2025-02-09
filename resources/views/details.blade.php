@@ -5,6 +5,10 @@
     <img src="{{ $movie['Poster'] ?? asset('images/no-image.png') }}" width="200">
     <h1>{{ $movie['Title'] ?? 'Unknown Title' }} ({{ $movie['Year'] ?? 'N/A' }})</h1>
     <p>{{ $movie['Plot'] ?? 'No plot available.' }}</p>
+    <p>Genre : {{ $movie['Genre'] ?? 'No Genre available.' }}</p>
+    <p>Country : {{ $movie['Country'] ?? 'No Country available.' }}</p>
+    <p>imdbRating : {{ $movie['imdbRating'] ?? 'No imdbRating available.' }}</p>
+    
 
     @auth
     <form action="/favorite" method="POST">
