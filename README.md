@@ -41,14 +41,14 @@ Alternatively, if you prefer to fork the repository first and then clone your fo
   
 Replace Your_github_username with your actual GitHub username
 
-3. Install dependencies:
+2. Install dependencies:
    
    ```composer install```
-4. Copy the environment file:
+3. Copy the environment file:
    
    ```cp .env.example .env```
    
-5. Configure Environment Variables:
+4. Configure Environment Variables:
    
  * Open the .env file and set up your database credentials.
    ```
@@ -106,6 +106,7 @@ To deploy the application:
 * Use github as a version control platform
 * Push code and commit changes
 
+Happy Coding!
   
 
     
