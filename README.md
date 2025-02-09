@@ -48,7 +48,7 @@ Before running the application, ensure you have the following installed:
     DB_PORT=3306
     DB_DATABASE=database_name
     DB_USERNAME=database_username
-    DB_PASSWORD=database_password```
+    DB_PASSWORD=database_password
    
 5. Generate application key:
 
@@ -66,21 +66,21 @@ Before running the application, ensure you have the following installed:
 
 ## API Configuration
 
-* OMDb open API: Get an API key from "https://www.omdbapi.com/" and set it in the .env file.
+* OMDb open API: Get an API key from https://www.omdbapi.com/ and set it in the .env file.
 
 ### How to Get Your OMDb API Key
 
-    To generate an API key, follow these steps: 
+To generate an API key, follow these steps: 
     
-    1. Go to OMDb API Website https://www.omdbapi.com/ and navigate to the "API Key" tab
-    2. Sign Up for an API Key
-     - Enter your name and email address
-     - Choose a free or paid plan (Free allows 1,000 requests per day)
-     - Click Submit
-    3. Check Your Email
-     - You will receive an email from OMDb with your API Key
-    4. Update Your .env File
-     - Replace your_api_key with the actual key from your email:
+1. Go to OMDb API Website https://www.omdbapi.com/ and navigate to the "API Key" tab
+2. Sign Up for an API Key
+    - Enter your name and email address
+    - Choose a free or paid plan (Free allows 1,000 requests per day)
+    - Click Submit
+3. Check Your Email
+    - You will receive an email from OMDb with your API Key
+4. Update Your .env File
+    - Replace your_api_key with the actual key from your email:
 
-    MOVIE_API_URL=https://www.omdbapi.com/
+    ```MOVIE_API_URL=https://www.omdbapi.com/
     MOVIE_API_KEY=your_omdb_api_key
