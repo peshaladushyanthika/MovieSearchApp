@@ -79,10 +79,10 @@ To generate an API key, follow these steps:
     - Click Submit
 3. Check Your Email
     - You will receive an email from OMDb with your API Key
-4. Update Your .env File
+4. Update Your .env File, Replace your_api_key with the actual key from your email:
 
-    MOVIE_API_URL=https://www.omdbapi.com/
+    ```MOVIE_API_URL=https://www.omdbapi.com/
     MOVIE_API_KEY=your_omdb_api_key
+    ```
 
-- Replace your_api_key with the actual key from your email
     
