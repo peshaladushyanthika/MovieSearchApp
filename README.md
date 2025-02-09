@@ -31,9 +31,12 @@ Before running the application, ensure you have the following installed:
 
 1. Clone the repository:
 2. Install dependencies:
+   composer install
 3. Copy the environment file:
+   cp .env.example .env
 4. Configure Environment Variables:
-   * Open the .env file and set up your API key and database credentials.
+ * Open the .env file and set up your API key and database credentials.
+   
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
@@ -44,14 +47,14 @@ Before running the application, ensure you have the following installed:
     MOVIE_API_URL=https://www.omdbapi.com/
     MOVIE_API_KEY=your_omdb_api_key
    
-6. Generate application key: php artisan key:generate
-7. Run database migrations: php artisan migrate
-8. Start the development server: php artisan serve
-9. Open http://127.0.0.1:8000 in your browser.
+7. Generate application key: php artisan key:generate
+8. Run database migrations: php artisan migrate
+9. Start the development server: php artisan serve
+10. Open "http://127.0.0.1:8000" in your browser.
 
 ## API Configuration
 
-* OMDb open API: Get an API key from https://www.omdbapi.com/ and set it in the .env file.
+* OMDb open API: Get an API key from "https://www.omdbapi.com/" and set it in the .env file.
 
 ### How to Get Your OMDb API Key
     To generate an API key, follow these steps: 
