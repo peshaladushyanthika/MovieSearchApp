@@ -30,11 +30,12 @@ Before running the application, ensure you have the following installed:
 ## Installation
 
 1. Clone the repository:
-2. Install dependencies:
-   composer install
-3. Copy the environment file:
+   ```https://github.com/peshaladushyanthika/MovieSearchApp.git```
+3. Install dependencies:
+   ```composer install```
+4. Copy the environment file:
    cp .env.example .env
-4. Configure Environment Variables:
+5. Configure Environment Variables:
  * Open the .env file and set up your API key and database credentials.
    
     DB_CONNECTION=mysql
