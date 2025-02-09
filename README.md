@@ -27,19 +27,28 @@ Before running the application, ensure you have the following installed:
 * MySQL
 * Laravel 9
   
-## Installation
+## Setup Instructions & Installation
 
 1. Clone the repository:
    
    ```https://github.com/peshaladushyanthika/MovieSearchApp.git```
-2. Install dependencies:
+
+   Alternatively, if you prefer to fork the repository first and then clone your fork, follow these steps:
+   - Fork the repository by clicking the Fork button in the top right corner of the GitHub page
+   - Clone your forked repository using:
+     
+     git clone https://github.com/YOUR_GITHUB_USERNAME/MovieSearchApp.git
+
+     Replace YOUR_GITHUB_USERNAME with your actual GitHub username.
+
+3. Install dependencies:
    
    ```composer install```
-3. Copy the environment file:
+4. Copy the environment file:
    
    ```cp .env.example .env```
    
-4. Configure Environment Variables:
+5. Configure Environment Variables:
    
  * Open the .env file and set up your database credentials.
    ```
