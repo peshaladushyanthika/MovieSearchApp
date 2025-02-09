@@ -1,64 +1,112 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Movie Search and Favorites App
+The Movie Search App is a web application built with Laravel that allows users to search for movies, view detailed information, and save favorites. The app integrates with the OMDb API to fetch movie data and provides user authentication to store personalized favorites.
 
-## About Laravel
+## Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+* Search Movies: Users can search for movies by title and view a list of results.
+* View Movie Details: Clicking on a movie displays detailed information such as title, year.
+* Favorite Movies: Users can save movies to their personal "Favorites" list.
+* Persistent Storage: Favorites are stored per user in the database.
+* Authentication: Users must log in to save and view their favorites.
+* Dynamic Theming: Users can switch between light and dark modes.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Tech Stack
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+* Framework: Laravel 9
+* Frontend: Blade Templates, JavaScript, Bootstrap
+* Database: MySQL
+* API: OMDb API
 
-## Learning Laravel
+## Prerequisites
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Before running the application, ensure you have the following installed:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+* PHP 8.0 or later
+* Composer
+* MySQL
+* Laravel 9
+  
+## Setup Instructions & Installation
 
-## Laravel Sponsors
+1. Clone the repository:
+   
+   ```git clone https://github.com/peshaladushyanthika/MovieSearchApp.git```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Alternatively, if you prefer to fork the repository first and then clone your fork, follow these steps:
+- Fork the repository by clicking the Fork button in the top right corner of the GitHub page
+- Clone your forked repository using:
 
-### Premium Partners
+     ```git clone https://github.com/Your_github_username/MovieSearchApp.git```
+  
+Replace Your_github_username with your actual GitHub username
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+2. Install dependencies:
+   
+   ```composer install```
+3. Copy the environment file:
+   
+   ```cp .env.example .env```
+   
+4. Configure Environment Variables:
+   
+ * Open the .env file and set up your database credentials.
+   ```
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=database_name
+    DB_USERNAME=database_username
+    DB_PASSWORD=database_password
+    
+5. Generate application key:
 
-## Contributing
+   ```php artisan key:generate```
+   
+6. Run database migrations:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+   ```php artisan migrate```
+   
+7. Start the development server:
 
-## Code of Conduct
+    ```php artisan serve```
+    
+8. Open http://127.0.0.1:8000 in your browser.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## API Configuration
 
-## Security Vulnerabilities
+* OMDb open API: Get an API key from https://www.omdbapi.com/ and set it in the .env file.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### How to Get Your OMDb API Key
 
-## License
+To generate an API key, follow these steps: 
+    
+1. Go to OMDb API Website https://www.omdbapi.com/ and navigate to the "API Key" tab
+2. Sign Up for an API Key
+   - Enter your name and email address
+   - Choose a free or paid plan (Free allows 1,000 requests per day)
+   - Click Submit
+3. Check Your Email
+   - You will receive an email from OMDb with your API Key
+4. Update Your .env File, replace your_api_key with the actual key from your email:
+      
+       MOVIE_API_URL=https://www.omdbapi.com/
+       MOVIE_API_KEY=your_omdb_api_key
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Usage
+
+* Register or log in.
+* Search for movies by entering a title.
+* Click on a movie to view details.
+* Add movies to favorites list.
+* Switch between light and dark modes as needed.
+
+## Deployment
+To deploy the application: 
+* Use github as a version control platform
+* Push code and commit changes
+
+Happy Coding!
+  
+
+    
